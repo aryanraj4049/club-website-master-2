@@ -18,11 +18,9 @@ export default function Team(props) {
                 <img src="https://lh3.googleusercontent.com/pw/AMWts8ByM7uWh0jid-Wzmwq1Co6wUfhekCOe27zPKOXXifOzyj-S20qyHx3BNK7B-GxQnnxuggQuDsnmi94VCDnqjI2wuWFaBZO7vtSTJPLXcJbAdgZZZZ5-I2w5t7EjvnfMSrFvGuiZhstXWbf7VZNPZmaT3A=w653-h869-no?authuser=0"alt="" /> 
                   <div class="image__overlay ">
                     <div className="contact">
-                      <a href="" target="blank"><img src={props.insta} alt="" /></a>
-                      <a href="" target="blank"><img src={props.fb} alt="" /></a>
                       <a href="mailto:aryanr20@iitk.ac.in"><img src={props.envelope} alt="" /></a>
                       <p></p>
-                      <a href=""><img src={props.globe} alt="" /></a>
+                      <a href="https://aryanraj4049.github.io/Aryan_Raj/" target="blank"><img src={props.globe} alt="" /></a>
                     </div>
                   </div>
                 </div>

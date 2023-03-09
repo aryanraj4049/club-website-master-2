@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './App.css';
 import Header from './MyComponents/Header';
 import Homepage from './MyComponents/Homepage';
@@ -82,6 +82,13 @@ import {
 } from "react-router-dom";
 
 function App() {
+  useEffect(() => {
+    // Disable caching
+    const headers = { 'Cache-Control': 'no-cache, no-store, must-revalidate' };
+    Object.entries(headers).forEach(([header, value]) => {
+      document.defaultView?.fetch?.('/', { headers: { [header]: value } });
+    });
+  }, []);
   return (
     <>
       
